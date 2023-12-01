@@ -1,120 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Name - Portfolio</title>
-    
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jomolhari&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Jomolhari&display=swap" rel="stylesheet">
+
     <style>
-        body {
-            font-family: "Arial", sans-serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+      body {
+        background-image: url("Background.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: #1e0d54;
+      }
 
-        .container {
-            max-width: 960px;
-            margin: 0 auto;
-            padding: 20px;
-        }
+      .title {
+        text-align: center;
+        margin: 100px;
+      }
 
-        header {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-        }
+      h1 {
+        font-family: "Jomolhari", serif;
+        font-size: 50px;
+        color: white;
+        letter-spacing: 7px;
+      }
 
-        header h1 {
-            margin: 0;
-        }
+      h2 {
+        font-family: "Gowun Dodum", sans-serif;
+        font-size: 16px;
+        color: white;
+        letter-spacing: 5px;
+      }
+      
+      h3 {
+        font-family: "Gowun Dodum", sans-serif;
+        font-size: 20px;
+        color: white;
+        letter-spacing: 5px;
+      }
+      
+      p {
+        font-family: "Gowun Dodum", sans-serif;
+        font-size: 16px;
+        color: white;
+        letter-spacing: 1px;
+        padding: 5px;
+      }
+      
+      .navbar {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
+      
+      .navbar li {
+        display: inline;
+      }
+      
+      .navbar a {
+        text-decoration: none;
+        color: white;
+        font-family: "Gowun Dodum", sans-serif;
+        font-size: 16px;
+        letter-spacing: 3px;
+        display: inline-block;
+        padding: 10px;
+        padding-left: 65px;
+        padding-right: 65px;
+      }
+      
+      .navbar a:hover{
+        color: yellow;
+      }
+      
+      .about {
+        padding-top: 350px;
+        padding-left: 50px;
+      }
+      
+      .photography {
+        padding: 50px;
+      }
 
-        section {
-            margin: 40px 0;
-        }
-
-        h2 {
-            color: #333;
-        }
-
-        ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        li {
-            margin-bottom: 10px;
-        }
-
-        .project {
-            border: 1px solid #ccc;
-            padding: 10px;
-            margin-bottom: 20px;
-        }
-
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-        }
     </style>
-</head>
+  </head>
+  <body>
+    <ul class="navbar">
+      <li><a href="#abt">ABOUT</a></li>
+      <li><a href="#photography">PHOTOGRAPHY</a></li>
+      <li><a href="#video">VIDEO</a></li>
+      <li><a href="#contact">CONTACT</a></li>
+    </ul>
+    
+    <div class="title">
+      <h1>Scott Raetsen</h1>
+      <h2>DIGITAL ARTIST</h2>
+    </div>
 
-<body>
-    <header>
-        <div class="container">
-            <h1>Scott Raetsen</h1>
-            <p>Poop Muncher</p>
-        </div>
-    </header>
-
-        <div class="container">
-            <h2>About Me</h2>
-            <p>
-                Write a brief introduction about yourself, your skills, and your passion for web development.
-            </p>
-        </div>
-
-        <div class="container">
-            <h2>Skills</h2>
-            <ul>
-              <li>Photography</li>
-              <li>Editing</li>
-              <li>Video Production</li>
-              <li>Graphic Design</li>
-              <li>HTML</li>
-              <li>CSS</li>
-            </ul>
-        </div>
-
-        <div class="container">
-            <h2>Projects</h2>
-            <div class="project">
-                <h3>Project 1</h3>
-                <p>Description of Project 1.</p>
-            </div>
-            <div class="project">
-                <h3>Project 2</h3>
-                <p>Description of Project 2.</p>
-            </div>
-            <!-- Add more projects as needed -->
-        </div>
-
-        <div class="container">
-            <h2>Contact Me</h2>
-            <p>Email: your.email@example.com</p>
-            <p>LinkedIn: linkedin.com/in/yourusername</p>
-            <p>GitHub: github.com/yourusername</p>
-        </div>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2023 Your Name. All rights reserved.</p>
-        </div>
-    </footer>
-</body>
+   <div class="about">
+     <h3 id="abt">
+       ABOUT
+     </h3>
+     <p>
+       My name is Scott and here is some stuff about me. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi porttitor eu erat et tincidunt. Aliquam facilisis augue sit amet diam pulvinar, eget molestie nulla hendrerit. Etiam sit amet malesuada lorem, vitae maximus est. Sed sed maximus sapien. Quisque eu urna purus. Morbi finibus ultrices lacus, in feugiat augue iaculis eget. Integer eu rutrum est. Quisque et ex est. Quisque quis molestie turpis. Phasellus venenatis velit mattis eros porttitor consequat in faucibus ex. Nullam iaculis ex ac lectus dignissim pretium vel eget sapien. Nunc ipsum tellus, congue sed egestas quis, ultricies eu dui. In ac posuere ante. Donec vel mi libero. Etiam at turpis facilisis, placerat nisl at, efficitur metus. 
+     </p>
+     <img src="10wmt-superJumbo-v4.jpg" alt="test">
+    </div>
+    
+     <div class="photography">
+     <h3 id="photography">
+       <strong>PHOTOGRAPHY</strong>
+     </h3>
+     <p>
+       My name is Scott and here is some stuff about me. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi porttitor eu erat et tincidunt. Aliquam facilisis augue sit amet diam pulvinar, eget molestie nulla hendrerit. Etiam sit amet malesuada lorem, vitae maximus est. Sed sed maximus sapien. Quisque eu urna purus. Morbi finibus ultrices lacus, in feugiat augue iaculis eget. Integer eu rutrum est. Quisque et ex est. Quisque quis molestie turpis. Phasellus venenatis velit mattis eros porttitor consequat in faucibus ex. Nullam iaculis ex ac lectus dignissim pretium vel eget sapien. Nunc ipsum tellus, congue sed egestas quis, ultricies eu dui. In ac posuere ante. Donec vel mi libero. Etiam at turpis facilisis, placerat nisl at, efficitur metus. 
+     </p>
+    </div>
+    
+  </body>
 
 </html>

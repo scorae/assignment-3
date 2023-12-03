@@ -14,6 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Jomolhari&display=swap" rel="stylesheet">
 
+    <!-- CSS -->
     <style>
       body {
         background-image: url("Background.png");
@@ -57,6 +58,19 @@
         text-align: justify;
       }
       
+      .toTopButton {
+        text-align: center;
+        padding: 15px;
+      }
+      
+      .toTopButton a {
+        font-family: "Jomolhari", serif;
+        color: #3610AC;
+        font-size: 16px;
+        letter-spacing: 5px;
+        text-decoration: none;
+      }
+      
       a {
         text-decoration: underline;
         color: white;
@@ -88,23 +102,43 @@
       }
       
       .about {
-        padding-top: 25%;
+        padding-top: 20%;
         padding-left: 50px;
         padding-right: 50px;
       }
       
       .photography {
         padding: 50px;
+        padding-top: 500px
       }
       
       img {
-        width: 100px;
-        height: 100px;
+        max-width: 60%;
+        height: auto;
+        border-radius: 2%
+      }
+      
+      .about img {
+        float: right;
+        margin-left: 25px;
+      }
+      
+      hr {
+        margin-top: 12%;
+        margin-left: 20px;
+        margin-right: 20px;
+        border: 2px solid #250F6A;
       }
 
     </style>
+    
+    <!-- HTML -->
+    
   </head>
   <body>
+    
+    <!-- HOMEPAGE -->
+    
     <ul class="navbar">
       <li><a href="#abt">ABOUT</a></li>
       <li><a href="#photography">PHOTO</a></li>
@@ -116,9 +150,12 @@
       <h1>Scott Raetsen</h1>
       <h2>DIGITAL ARTIST</h2>
     </div>
-
+    
+    <!-- ABOUT -->
+    
    <div class="about">
-     <h3 id="abt">
+     <img src="toronto.jpg" alt="Toronto Skyline at Night" width="500" height="350">
+     <h3>
        ABOUT
      </h3>
      <p>
@@ -126,14 +163,24 @@
      </p>
     </div> 
     
-     <div class="photography">
+    <hr>
+    
+    <!-- PHOTO -->
+
+    <div class="toTopButton">
+       <a href="#title">Scott Raetsen</a>
+    </div>
+    
+    <div class="photography">
      <h3 id="photography">
-       <strong>PHOTOGRAPHY</strong>
+       PHOTO
      </h3>
      <p>
        My name is Scott and here is some stuff about me. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi porttitor eu erat et tincidunt. Aliquam facilisis augue sit amet diam pulvinar, eget molestie nulla hendrerit. Etiam sit amet malesuada lorem, vitae maximus est. Sed sed maximus sapien. Quisque eu urna purus. Morbi finibus ultrices lacus, in feugiat augue iaculis eget. Integer eu rutrum est. Quisque et ex est. Quisque quis molestie turpis. Phasellus venenatis velit mattis eros porttitor consequat in faucibus ex. Nullam iaculis ex ac lectus dignissim pretium vel eget sapien. Nunc ipsum tellus, congue sed egestas quis, ultricies eu dui. In ac posuere ante. Donec vel mi libero. Etiam at turpis facilisis, placerat nisl at, efficitur metus. 
      </p>
     </div>
+    
+    <!-- VIDEO -->
     
   </body>
 

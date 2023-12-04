@@ -1,17 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scott Raetsen Website</title>
+    <title>Scott Raetsen - Digital Artist</title>
 
     <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jomolhari&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Jomolhari&display=swap" rel="stylesheet">
 
     <!-- CSS -->
@@ -28,11 +25,14 @@
         margin: 12%;
       }
 
+      .title h1 {
+        font-size: 50px;
+        letter-spacing: 7px;
+      }
+
       h1 {
         font-family: "Jomolhari", serif;
-        font-size: 50px;
         color: white;
-        letter-spacing: 7px;
       }
 
       h2 {
@@ -132,12 +132,24 @@
         margin-right: 20px;
         border: 2px solid #250F6A;
       }
-      
+
       .video {
         padding: 50px;
       }
 
-      /* Code copied from: https://www.w3schools.com/w3css/w3css_slideshow.asp
+      .video img {
+        float: left;
+        margin-right: 25px;
+        max-width: 600px;
+        height: auto;
+      }
+
+      .contact {
+        padding: 50px;
+      }
+
+
+   /* Code copied from: https://www.w3schools.com/w3css/w3css_slideshow.asp
       Author: w3schools.com
       Name: Automatic slideshow
       Description: Displays an automatic (animated) slideshow.
@@ -145,6 +157,7 @@
       */
 
       /* Copied code starts */
+      
       /* Slideshow container */
       * {
         box-sizing: border-box;
@@ -199,6 +212,80 @@
       }
 
       /* Copied code ends */
+
+      /* Fake Video Player */
+
+      .videoPlayer {
+        position: relative;
+        top: 0;
+        left: 0;
+      }
+
+      .felted {
+        float: left;
+        max-width: 600px;
+        height: auto;
+        margin: 25px;
+        position: relative;
+        top: 0;
+        left: 0;
+      }
+
+      .play {
+        position: absolute;
+        top: 145px;
+        left: 227px;
+        width: 215px;
+        height: 120px;
+      }
+
+      .play:hover {
+        top: 140px;
+        left: 222px;
+        width: 225px;
+        height: 130px;
+      }
+
+      table {
+        border: 3px solid #130443;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      th {
+        background-color: #3610AC;
+        font-family: "Gowun Dodum", sans-serif;
+        font-size: 16px;
+        color: white;
+        letter-spacing: 3px;
+      }
+
+      td {
+        background-color: #241064;
+        font-family: "Gowun Dodum", sans-serif;
+        font-size: 16px;
+        color: white;
+        letter-spacing: 3px;
+        text-align: center;
+      }
+
+      footer {
+        background-color: #15083D;
+        font-size: 16;
+        padding: 25px;
+        letter-spacing: 5px;
+        text-align: center;
+      }
+
+      .copyright {
+        text-align: center;
+      }
+
+      .hrFooter {
+        margin-top: 15px;
+        border: 2px solid #1B0F41;
+      }
     </style>
 
     <!-- HTML -->
@@ -210,7 +297,7 @@
 
     <ul id="home" class="navbar">
       <li><a href="#abt">ABOUT</a></li>
-      <li><a href="#photo">PHOTO</a></li>
+      <li><a href="#photo">PHOTOGRAPHY</a></li>
       <li><a href="#video">VIDEO</a></li>
       <li><a href="#contact">CONTACT</a></li>
     </ul>
@@ -228,7 +315,7 @@
         ABOUT
       </h3>
       <p>
-        My name is Scott and I am a Toronto-based Digital Artist. I am currently studying Global Business and Digital Arts at the University of Waterloo. I have extensive experience in <a href="#photo">photography</a>, <a href="#video">videography</a> and design. I am skilled in many Adobe Creative Cloud programs including Premiere Pro, Photoshop, Illustrator and inDesign. Currently I have aspiratons to add After Effects to my repetoire of skills.
+        My name is Scott and I am a Toronto-based Digital Artist. I am currently studying Global Business and Digital Arts at the University of Waterloo. I have extensive experience in <a href="#photo">photography</a>, <a href="#video">videography</a> and design. I am skilled in many Adobe Creative Cloud programs including Premiere Pro, Photoshop, Illustrator and inDesign. Currently I have aspiratons to add After Effects to my repetoire of skills. I am also comfortable working with camera, lighting, and audio gear.
       </p>
     </div>
 
@@ -248,12 +335,12 @@
         I have been passionate about photography for around 10 years now. In this time I have familiarized myself with and become comfortable with many of the key principles of photography. You can find more of my photography <a href="https://www.pixoto.com/scorae" target="_blank">here</a>.
       </p>
     </div>
-
-    <!-- Code copied from: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_auto
-Author: w3schools.com
-Name: Automatic slideshow
-Description: Plays an automatic slideshow.
-Date retrieved: Dec 3, 2023
+    
+<!-- Code copied from: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_auto
+    Author: w3schools.com
+    Name: Automatic slideshow
+    Description: Plays an automatic slideshow.
+    Date retrieved: Dec 3, 2023
 -->
 
     <!-- Copied code starts -->
@@ -320,14 +407,94 @@ Date retrieved: Dec 3, 2023
       <a href="#home">Scott Raetsen</a>
     </div>
 
+    <div class="videoPlayer">
+      <img class="felted" src="felted.png" alt="Felted Documentary Thumbnail">
+      <!-- 
+       Image From: https://www.freepnglogos.com/images/youtube-play-button-28306.html
+       Author: freepnglogos.com
+       Name: youtube play button, index media cover art play button overlay
+       Description: A play button
+       Date retrieved: Dec 3, 2023
+      -->
+      <a href="https://www.youtube.com/watch?v=MaAsl1e9s1Y" target="_blank"><img class="play" src="playButton.png" alt="Play button"></a>
+
+    </div>
+
     <div class="video">
       <h3 id="video">
         VIDEO
       </h3>
       <p>
-        I have been passionate about photography for around 10 years now. In this time I have familiarized myself with and become comfortable with many of the key principles of photography.
+        I have been editing video for almost 7 years now - mostly for passion projects. In this time I have mostly used Adobe Premiere Pro to edit, and as such I am very comfortable with the program. Recently I edited and helped film a documentary for one of my classes. You can view <em>Felted: The Artistry of Fibre </em><a href="https://www.youtube.com/watch?v=MaAsl1e9s1Y" target="_blank">here</a>.
       </p>
     </div>
-  </body>
 
+    <hr>
+
+    <!-- CONTACT -->
+
+    <div class="toTopButton">
+      <a href="#home">Scott Raetsen</a>
+    </div>
+
+    <div class="contact">
+      <h3 id="contact">
+        CONTACT
+      </h3>
+      <p>
+        Do you want to contact me? Feel free to send me an email at any time. If you are looking to hire me as an editor you can book a free consultation by sending me an email. Meeting availiability is as outlined below. You can also find me on <a href="https://www.instagram.com/scorae/" target="_blank">Instagram</a>!
+        <br>
+        <br>
+        <a href="mailto:sraetsen@uwaterloo.ca" target="_blank">Send Email</a>
+      </p>
+
+      <table>
+        <tr>
+          <th>DAY</th>
+          <th>AVAILIABILITY</th>
+        </tr>
+        <tr>
+          <td>Monday</td>
+          <td>9:00 AM - 5:00 PM</td>
+        </tr>
+        <tr>
+          <td>Tuesday</td>
+          <td>5:00 PM - 8:00 PM</td>
+        </tr>
+        <tr>
+          <td>Wednesday</td>
+          <td>5:00 PM - 8:00 PM</td>
+        </tr>
+        <tr>
+          <td>Thursday</td>
+          <td>9:00 AM - 5:00 PM</td>
+        </tr>
+        <tr>
+          <td>Friday</td>
+          <td>9:00 AM - 5:00 PM</td>
+        </tr>
+        <tr>
+          <td>Saturday</td>
+          <td>12:00 PM - 4:00 PM</td>
+        </tr>
+        <tr>
+          <td>Sunday</td>
+          <td>12:00 PM - 4:00 PM</td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- FOOTER -->
+
+    <div clss="foot">
+      <footer>
+        <h1>
+          Scott Raetsen
+        </h1>
+        <h2>DIGITAL ARTIST</h2>
+        <hr class="hrFooter">
+        <p class="copyright">© 2023 Scott Raetsen</p>
+      </footer>
+    </div>
+  </body>
 </html>
